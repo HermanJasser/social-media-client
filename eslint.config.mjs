@@ -7,19 +7,19 @@ export default [
     files: ["**/*.js"],
     languageOptions: {
       globals: {
-        ...globals.browser, // Add browser globals like `document`, `fetch`, etc.
+        ...globals.browser,
       },
     },
   },
   pluginJs.configs.recommended,
   {
-    files: ["**/*.test.js"], // Applies only to Jest test files
+    files: ["**/*.test.js"],
     plugins: {
       jest: pluginJest,
     },
     languageOptions: {
       globals: {
-        ...globals.jest, // Add Jest globals like `describe`, `it`, etc.
+        ...globals.jest,
       },
     },
     rules: {
